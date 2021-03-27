@@ -1,6 +1,8 @@
 library(dplyr)
 library(data.table)
 
+## Making a Data directory to store data. 
+
 if(!file.exists("data")){
   dir.create("data")
 }

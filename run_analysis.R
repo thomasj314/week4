@@ -34,3 +34,8 @@ tidy_data <- target_data %>%
 ## relabeling the names of vectors 
 
 names(tidy_data) <- c(names(tidy_data[c(1,2)]),paste0("Avrg-",names(tidy_data[-c(1,2)])))
+
+
+## Writing in a text file 
+
+write.table(tidy_data,"tidy_data.txt", row.names = FALSE)
